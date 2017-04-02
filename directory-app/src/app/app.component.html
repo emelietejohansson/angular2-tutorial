@@ -8,5 +8,5 @@
     </nav>
 </header>
 <section id="main">
-    <app-home [ninjaCoder]="ninjaCoder">Hello there</app-home>
+    <app-home [ninjaCoder]="ninjaCoder" (onYell)="yell($event)">Hello there</app-home>
 </section>
