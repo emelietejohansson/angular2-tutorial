@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  name = 'Hello my name is Emelie';
+  name = 'Emelie';
+  ninjaCoder = {
+      name: "Emelie",
+      belt: "Blue"
+  };
 }
