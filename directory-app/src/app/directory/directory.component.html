@@ -1,11 +1,12 @@
-<p [ngClass]="classes">
-  directory works!
-</p>
+<h2>Coder Listing</h2>
 
-<p *ngIf="test">Only show is test is true</p>
-
-<style>
-    .blue{ color: blue; }
-    .red{ color: red; }
-    .underline{ text-decoration: underline; }
-</style>
+<ul id="coder-listing">
+  <li *ngFor="let coder of coders">
+    <div class="single-coder">
+      <!-- Belt Color -->
+      <span [ngStyle]="{background: coder.belt}">{{coder.belt}} belt</span>
+      <!-- Coder Name -->
+      <h3>{{coder.name}}</h3>
+    </div>
+  </li>
+</ul>
