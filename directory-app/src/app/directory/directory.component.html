@@ -6,7 +6,7 @@
       <!-- Belt Color -->
       <span [ngStyle]="{background: coder.belt}">{{coder.belt}} belt</span>
       <!-- Coder Name -->
-      <h3>{{coder.name}}</h3>
+      <h3>{{coder.name | uppercase | slice: 1:3 }}</h3>
     </div>
   </li>
 </ul>
