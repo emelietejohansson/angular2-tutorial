@@ -3,14 +3,10 @@
 </p>
 <ng-content></ng-content>
 
-<!-- property binding -->
-<input [value]="myString" />
-<input [required]="myBoolean" />
-
-<button (click)="alertMe('Coding is fun')">Click me!</button>
-
-<!-- string interpolation also works-->
-<!--
-<input value="{{myString}}" />
-<input required="{{myBoolean}}" />
--->
+<!-- 2-way data binding -->
+<label>Name:</label>
+<input [(ngModel)]="ninjaCoder.name" />
+<label>Belt:</label>
+<input [(ngModel)]="ninjaCoder.belt" />
+<p>{{ninjaCoder.name}}</p>
+<p>{{ninjaCoder.belt}}</p>
